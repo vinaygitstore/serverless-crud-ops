@@ -33,7 +33,7 @@ const getUser = async (event) => {
         console.error(e);
         response.statusCode = 500;
         response.body = JSON.stringify({
-            message: "Failed to get post.",
+            message: "Failed to retrieve post.",
             errorMsg: e.message,
             errorStack: e.stack,
         });
