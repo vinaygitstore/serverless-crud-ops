@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "0c8c207a-faea-4e0b-a571-05390ab87361",
+		"name": "SERVERLESS CRUD OPS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-user-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://oovr95hcik.execute-api.ap-south-1.amazonaws.com/dev/fetch/102",
+					"protocol": "https",
+					"host": [
+						"oovr95hcik",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"fetch",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://oovr95hcik.execute-api.ap-south-1.amazonaws.com/dev/users",
+					"protocol": "https",
+					"host": [
+						"oovr95hcik",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"102\",\r\n    \"email\": \"user102@mail.com\",\r\n    \"phone\": \"9280321948\",\r\n    \"firstName\": \"user 102\",\r\n    \"lastName\": \"102\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://oovr95hcik.execute-api.ap-south-1.amazonaws.com/dev/create",
+					"protocol": "https",
+					"host": [
+						"oovr95hcik",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"user102@mail.com\",\r\n    \"phone\": \"9523881102\",\r\n    \"firstName\": \"102\",\r\n    \"lastName\": \"name 102\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://oovr95hcik.execute-api.ap-south-1.amazonaws.com/dev/update/102",
+					"protocol": "https",
+					"host": [
+						"oovr95hcik",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"update",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://oovr95hcik.execute-api.ap-south-1.amazonaws.com/dev/delete/101",
+					"protocol": "https",
+					"host": [
+						"oovr95hcik",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"delete",
+						"101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
